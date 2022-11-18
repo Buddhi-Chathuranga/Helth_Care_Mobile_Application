@@ -1,0 +1,108 @@
+1,Best ,High,High ,leg,Exercise_Plan_01
+2,Best,High,High ,hand,Exercise_Plan_02
+3,Best,High,High ,Heart surgery ,Exercise_Plan_03
+4,Best,High,High,No,Exercise_Plan_04
+5,Normal,High,High ,leg,Exercise_Plan_05
+6,Normal,High,High ,hand,Exercise_Plan_06
+7,Normal,High,High ,Heart surgery ,Exercise_Plan_07
+8,Normal,High,High,No,Exercise_Plan_08
+9,Worst,High,High ,leg,Exercise_Plan_09
+10,Worst,High,High ,hand,Exercise_Plan_10
+11,Worst,High,High ,Heart surgery ,Exercise_Plan_11
+12,Worst,High,High,No,Exercise_Plan_12
+13,Best ,Low,Low ,leg,Exercise_Plan_13
+14,Best,Low,Low ,hand,Exercise_Plan_14
+15,Best,Low,Low ,Heart surgery ,Exercise_Plan_15
+16,Best,Low,Low ,No,Exercise_Plan_16
+17,Normal,Low,Low ,leg,Exercise_Plan_17
+18,Normal,Low,Low ,hand,Exercise_Plan_18
+19,Normal,Low,Low ,Heart surgery ,Exercise_Plan_19
+20,Normal,Low,Low ,No,Exercise_Plan_20
+21,Worst,Low,Low ,leg,Exercise_Plan_21
+22,Worst,Low,Low ,hand,Exercise_Plan_22
+23,Worst,Low,Low ,Heart surgery ,Exercise_Plan_23
+24,Worst,Low,Low ,No,Exercise_Plan_24
+25,Best ,High,Low ,leg,Exercise_Plan_01
+26,Best,High,Low ,hand,Exercise_Plan_02
+27,Best,High,Low ,Heart surgery ,Exercise_Plan_03
+28,Best,High,Low ,No,Exercise_Plan_04
+29,Normal,High,Low ,leg,Exercise_Plan_05
+30,Normal,High,Low ,hand,Exercise_Plan_06
+31,Normal,High,Low ,Heart surgery ,Exercise_Plan_07
+32,Normal,High,Low ,No,Exercise_Plan_08
+33,Worst,High,Low ,leg,Exercise_Plan_09
+34,Worst,High,Low ,hand,Exercise_Plan_10
+35,Worst,High,Low ,Heart surgery ,Exercise_Plan_11
+36,Worst,High,Low ,No,Exercise_Plan_12
+37,Best ,Low ,High,leg,Exercise_Plan_13
+38,Best,Low ,High,hand,Exercise_Plan_14
+39,Best,Low ,High,Heart surgery ,Exercise_Plan_15
+40,Best,Low ,High,No,Exercise_Plan_16
+41,Normal,Low ,High,leg,Exercise_Plan_17
+42,Normal,Low ,High,hand,Exercise_Plan_18
+43,Normal,Low ,High,Heart surgery ,Exercise_Plan_19
+44,Normal,Low ,High,No,Exercise_Plan_20
+45,Worst,Low ,High,leg,Exercise_Plan_21
+46,Worst,Low ,High,hand,Exercise_Plan_22
+47,Worst,Low ,High,Heart surgery ,Exercise_Plan_23
+48,Worst,Low ,High,No,Exercise_Plan_24
+49,Best ,Medium,Medium,leg,Exercise_Plan_13
+50,Best,Medium,Medium,hand,Exercise_Plan_14
+51,Best,Medium,Medium,Heart surgery ,Exercise_Plan_15
+52,Best,Medium,Medium,No,Exercise_Plan_16
+53,Normal,Medium ,Medium ,leg,Exercise_Plan_17
+54,Normal,Medium ,Medium ,hand,Exercise_Plan_18
+55,Normal,Medium  ,Medium  ,Heart surgery ,Exercise_Plan_19
+56,Normal,Medium ,Medium ,No,Exercise_Plan_20
+57,Worst,Medium ,Medium ,leg,Exercise_Plan_21
+58,Worst,Medium  ,Medium  ,hand,Exercise_Plan_22
+59,Worst,Medium  ,Medium  ,Heart surgery ,Exercise_Plan_23
+60,Worst,Medium  ,Medium  ,No,Exercise_Plan_24
+61,Best ,High,Medium,leg,Exercise_Plan_01
+62,Best,High,Medium,hand,Exercise_Plan_02
+63,Best,High,Medium,Heart surgery ,Exercise_Plan_03
+64,Best,High,Medium,No,Exercise_Plan_04
+65,Normal,High,Medium ,leg,Exercise_Plan_05
+66,Normal,High,Medium ,hand,Exercise_Plan_06
+67,Normal,High,Medium  ,Heart surgery ,Exercise_Plan_07
+68,Normal,High,Medium ,No,Exercise_Plan_08
+69,Worst,High,Medium ,leg,Exercise_Plan_09
+70,Worst,High,Medium  ,hand,Exercise_Plan_10
+71,Worst,High,Medium  ,Heart surgery ,Exercise_Plan_11
+72,Worst,High,Medium  ,No,Exercise_Plan_12
+73,Best ,Low ,Medium,leg,Exercise_Plan_13
+74,Best,Low ,Medium,hand,Exercise_Plan_14
+75,Best,Low ,Medium,Heart surgery ,Exercise_Plan_15
+76,Best,Low ,Medium,No,Exercise_Plan_16
+77,Normal,Low ,Medium ,leg,Exercise_Plan_17
+78,Normal,Low ,Medium ,hand,Exercise_Plan_18
+79,Normal,Low ,Medium  ,Heart surgery ,Exercise_Plan_19
+80,Normal,Low ,Medium ,No,Exercise_Plan_20
+81,Worst,Low ,Medium ,leg,Exercise_Plan_21
+82,Worst,Low ,Medium  ,hand,Exercise_Plan_22
+83,Worst,Low ,Medium  ,Heart surgery ,Exercise_Plan_23
+84,Worst,Low ,Medium  ,No,Exercise_Plan_24
+85,Best ,Medium,Low ,leg,Exercise_Plan_13
+86,Best,Medium,Low ,hand,Exercise_Plan_14
+87,Best,Medium,Low ,Heart surgery ,Exercise_Plan_15
+88,Best,Medium,Low ,No,Exercise_Plan_16
+89,Normal,Medium ,Low ,leg,Exercise_Plan_17
+90,Normal,Medium ,Low ,hand,Exercise_Plan_18
+91,Normal,Medium  ,Low ,Heart surgery ,Exercise_Plan_19
+92,Normal,Medium ,Low ,No,Exercise_Plan_20
+93,Worst,Medium ,Low ,leg,Exercise_Plan_21
+94,Worst,Medium  ,Low ,hand,Exercise_Plan_22
+95,Worst,Medium  ,Low ,Heart surgery ,Exercise_Plan_23
+96,Worst,Medium  ,Low ,No,Exercise_Plan_24
+97,Best ,Medium,High,leg,Exercise_Plan_13
+98,Best,Medium,High,hand,Exercise_Plan_14
+99,Best,Medium,High,Heart surgery ,Exercise_Plan_15
+100,Best,Medium,High,No,Exercise_Plan_16
+101,Normal,Medium ,High,leg,Exercise_Plan_17
+102,Normal,Medium ,High,hand,Exercise_Plan_18
+103,Normal,Medium  ,High,Heart surgery ,Exercise_Plan_19
+104,Normal,Medium ,High,No,Exercise_Plan_20
+105,Worst,Medium ,High,leg,Exercise_Plan_21
+106,Worst,Medium  ,High,hand,Exercise_Plan_22
+107,Worst,Medium  ,High,Heart surgery ,Exercise_Plan_23
+108,Worst,Medium  ,High,No,Exercise_Plan_24

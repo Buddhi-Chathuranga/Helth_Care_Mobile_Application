@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Health Care</string>
+
+    <string name="meal_plan_input">Meal Plan Input</string>
+    <string name="selete_item">selete Item</string>
+    <string name="select_item">Select Item</string>
+    <string name="meal_plan_type">Meal Plan Type</string>
+    <string name="meal_plan_list">Meal Plan List</string>
+    <string name="meal_plan_details">Meal Plan Details</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="breakfast_dec">Sambar with 2 brown rice idlis/ Paneer sandwich with mint chutney</string>
+    <string name="lunch">Lunch</string>
+    <string name="lunch_dec">Whole-grain roti with mixed-vegetable curry with one dal</string>
+    <string name="dinner">Dinner</string>
+    <string name="dinner_dec">Tofu/chicken curry with mixed vegetables and a fresh spinach salad/chicken gravy with 2 multigrain rotis</string>
+    <string name="pm_snack">PM Snack</string>
+    <string name="pm_snack_dec">1 medium apple or 1 cup grapefruit</string>
+    <string name="evening_snack">Evening Snack</string>
+    <string name="evening_snack_dec">1 cup (80g) diced fresh pineapple</string>
+    <string name="heart_mealplan">Heart Mealplan</string>
+    <string name="diabetes_mealplan">Diabetes Mealplan</string>
+</resources>

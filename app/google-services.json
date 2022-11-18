@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "284911642780",
+    "firebase_url": "https://health-band-cb631-default-rtdb.firebaseio.com",
+    "project_id": "health-band-cb631",
+    "storage_bucket": "health-band-cb631.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284911642780:android:35c077d2c99199543ce559",
+        "android_client_info": {
+          "package_name": "com.example.agro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284911642780-squv7ov1qflei9sbusgkohmgf32viepc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7fpgBQrf53ro67L2_z91I8FsOKDNG_rQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284911642780-squv7ov1qflei9sbusgkohmgf32viepc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

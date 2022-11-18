@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="Gradle: com.shaishavgandhi:login-buttons:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/22253a362152544aacd5fc50e9648339/transformed/jetified-login-buttons-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/22253a362152544aacd5fc50e9648339/transformed/jetified-login-buttons-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/22253a362152544aacd5fc50e9648339/transformed/jetified-login-buttons-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fe0a7f9c3e202f30e2a5c411c6ad9277/transformed/jetified-login-buttons-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe0a7f9c3e202f30e2a5c411c6ad9277/transformed/jetified-login-buttons-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe0a7f9c3e202f30e2a5c411c6ad9277/transformed/jetified-login-buttons-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5e509cff1e658c925dbba73b20dc00cb/transformed/jetified-login-buttons-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5e509cff1e658c925dbba73b20dc00cb/transformed/jetified-login-buttons-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5e509cff1e658c925dbba73b20dc00cb/transformed/jetified-login-buttons-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5645b5e52969f8286dd87559526da31/transformed/jetified-login-buttons-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d5645b5e52969f8286dd87559526da31/transformed/jetified-login-buttons-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5645b5e52969f8286dd87559526da31/transformed/jetified-login-buttons-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/535ac26463857a375769ed9442c8e1f7/transformed/jetified-login-buttons-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/535ac26463857a375769ed9442c8e1f7/transformed/jetified-login-buttons-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/535ac26463857a375769ed9442c8e1f7/transformed/jetified-login-buttons-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d57c5b6c917dd968b9814f1795937fe7/transformed/jetified-login-buttons-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d57c5b6c917dd968b9814f1795937fe7/transformed/jetified-login-buttons-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d57c5b6c917dd968b9814f1795937fe7/transformed/jetified-login-buttons-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/55f5ff1e27c9bb57a3d0efd770999cf7/transformed/jetified-login-buttons-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55f5ff1e27c9bb57a3d0efd770999cf7/transformed/jetified-login-buttons-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55f5ff1e27c9bb57a3d0efd770999cf7/transformed/jetified-login-buttons-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shaishavgandhi/login-buttons/1.0.0/8fde4147d3b71833a43b641c94df12fa43153985/login-buttons-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shaishavgandhi/login-buttons/1.0.0/daab27fe865776c5f4c9538110bf3deddbcab786/login-buttons-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

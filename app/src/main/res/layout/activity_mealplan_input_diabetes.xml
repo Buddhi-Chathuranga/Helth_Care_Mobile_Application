@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mealplan_input_diabetes">
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/vertical_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="91dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="left|center"
+            android:background="@drawable/back_foreground"
+            android:onClick="goback"
+            >
+        </ImageButton>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/home_foreground"
+            android:onClick="goHome"
+            >
+
+        </ImageButton>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-80dp"
+        android:background="@drawable/oneradisrangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/diabetes_mealplan"
+        android:textColor="@color/yellow"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:fillViewport="true"
+        android:minHeight="400dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="514dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:id="@+id/detailGender"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:gravity="center|top"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:hint="Gender"-->
+<!--                    android:textColorHint="@color/hint"-->
+<!--                    app:boxBackgroundColor="@color/white"-->
+<!--                    app:boxCornerRadiusBottomEnd="20dp"-->
+<!--                    app:boxCornerRadiusBottomStart="20dp"-->
+<!--                    app:boxCornerRadiusTopEnd="20dp"-->
+<!--                    app:boxCornerRadiusTopStart="20dp"-->
+<!--                    app:boxStrokeColor="@color/stroke"-->
+<!--                    app:boxStrokeWidth="1dp">-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/Gender"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:background="@drawable/border"-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:inputType="none"-->
+<!--                        android:maxLength="20"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:id="@+id/detailAge"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:gravity="center|top"-->
+<!--                    android:hint="Age"-->
+<!--                    android:textColorHint="@color/hint"-->
+<!--                    app:boxBackgroundColor="@color/white"-->
+<!--                    app:boxCornerRadiusBottomEnd="20dp"-->
+<!--                    app:boxCornerRadiusBottomStart="20dp"-->
+<!--                    app:boxCornerRadiusTopEnd="20dp"-->
+<!--                    app:boxCornerRadiusTopStart="20dp"-->
+<!--                    app:boxStrokeColor="@color/stroke"-->
+<!--                    app:boxStrokeWidth="1dp">-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/age"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:paddingLeft="15dp"-->
+<!--                        android:inputType="date"-->
+<!--                        android:maxLength="20"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:id="@+id/detailHeight"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:gravity="center|top"-->
+<!--                    android:hint="Height"-->
+<!--                    android:textColorHint="@color/hint"-->
+<!--                    app:boxBackgroundColor="@color/white"-->
+<!--                    app:boxCornerRadiusBottomEnd="20dp"-->
+<!--                    app:boxCornerRadiusBottomStart="20dp"-->
+<!--                    app:boxCornerRadiusTopEnd="20dp"-->
+<!--                    app:boxCornerRadiusTopStart="20dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    app:boxStrokeColor="@color/stroke"-->
+<!--                    app:boxStrokeWidth="1dp">-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/Height"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:maxLength="20"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:paddingLeft="15dp"/>-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:id="@+id/detailWeight"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:gravity="center|top"-->
+<!--                    android:hint="Weight"-->
+<!--                    android:textColorHint="@color/hint"-->
+<!--                    app:boxBackgroundColor="@color/white"-->
+<!--                    app:boxCornerRadiusBottomEnd="20dp"-->
+<!--                    app:boxCornerRadiusBottomStart="20dp"-->
+<!--                    app:boxCornerRadiusTopEnd="20dp"-->
+<!--                    app:boxCornerRadiusTopStart="20dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    app:boxStrokeColor="@color/stroke"-->
+<!--                    app:boxStrokeWidth="1dp">-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/Weight"-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:maxLength="20"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:paddingLeft="15dp"/>-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailurination"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Frequent urination"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/urination"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailthirst"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="An increase in thirst"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/thirst"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailloss"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Sudden weight loss"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp"
+                    android:layout_marginBottom="20dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/loss"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailweakness"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center|top"
+                    android:hint="Muscle weakness"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/weakness"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailhunger"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center|top"
+                    android:hint="Excessive hunger"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/hunger"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/detailthrush"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center|top"
+                    android:hint="Wisible Genital thrush"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/thrush"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailBlurring"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Visual Blurring"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Blurring"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailSkin"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Skin Itching"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Skin"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailIrritability"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Irritability"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Irritability"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailHealing"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Delayed Healing"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Healing"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailparesis"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Partial Paresis"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/paresis"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailstiffness"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Muscle stiffness"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stiffness"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailHair"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Hair loss (Alopecia)"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Hair"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailActivityLevel"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Activity Level"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ActivityLevel"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailGoal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Goal"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Goal"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/detailFood"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center|top"
+                    android:hint="Food Type"
+                    android:textColorHint="@color/hint"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="@color/stroke"
+                    app:boxStrokeWidth="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Food"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textFontWeight="@integer/material_motion_duration_medium_2"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/btnhelp"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:text="Help"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:background="@drawable/button_outline"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="normal"/>-->
+
+            <Button
+                android:id="@+id/btncontinue"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg"
+                android:textSize="18sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
